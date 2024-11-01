@@ -2,8 +2,8 @@
 
 ## Sobre
 
-Esse repositório contém todas (ou quase) atividades envolvendo implementação sobre o conteúdo
-da cadeira de métodos numéricos.
+Esse repositório contém todas (ou quase todas) as atividades envolvendo implementação sobre o conteúdo
+de métodos numéricos I.
 
 ## Atividades
 
