@@ -13,4 +13,4 @@ Atividade sobre conversão de bases
 
 - [x] Conversão de decimal pra base n (1 <= n < 36).
 - [x] Conversão de base n para decimal.
-- [ ] Conversão de base n para base y.
+- [x] Conversão de base n para base y.
