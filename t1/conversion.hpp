@@ -2,6 +2,7 @@
 #include <cmath>
 #include <stack>
 #include <algorithm>
+#include <string>
 using namespace std;
 int returnIndex(char f,string array){
 	for (int i=0;i<array.size();i++){
@@ -71,4 +72,8 @@ string nBase_to_decimal (string n,int base){
 		}
 	}
 	return to_string(final);
+}
+string nBase_to_yBase(string n,int basen,int basey){
+	string aux = nBase_to_decimal(n,basen);
+	return (decimal_to_nBase(stoi(aux),basey));
 }
