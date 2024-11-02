@@ -19,13 +19,8 @@ string decimal_to_nBase (int n,int base){
 							"A","B","C","D","E","F","G","H","I","J",
 							"K","L","M","N","O","P","Q","R","S","T",
 							"U","V","W","X","Y","Z"};
-	bool isNegative;
 	string final;
-	if (n > 0){
-		isNegative = false;
-	}
-	else {
-		isNegative = true;
+	if (n < 0){
 		final += '-';
 		n = n * (-1);
 	}
