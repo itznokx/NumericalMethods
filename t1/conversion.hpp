@@ -51,7 +51,6 @@ string nBase_to_decimal (string n,int base){
 	int final;
 	bool isNegative = false;
 	if ( n[0] == '-'){
-
 		isNegative = true;
 		reverse(n.begin(),n.end());
 		for (int i=0;i<n.length()-1;i++){

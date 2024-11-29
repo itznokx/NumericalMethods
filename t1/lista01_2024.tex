@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Lista 1}
+\author{Métodos Numéricos 2024}
+\date{Dimitri Medeiros - 509066}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Questão 01}
+\subsection{Faça a conversão binário-decimal de 27 na base 10 para a base 2.}
+\begin{itemize}
+    \item Utilizando \% como operador de módulo, ou seja, resto de uma divisão:
+    \item {27\%2 = 1, e $\frac{27}{2}$ = 13 }
+    \item {13\%2 = 1, e $\frac{13}{2}$ = 6}
+    \item {6\%2 = 0, e $\frac{6}{2}$ = 3}
+    \item {3\%2 = 1, e $\frac{3}{2}$ = 1}
+    \item {$\frac{3}{2}$ = 1}
+    
+\end{itemize}
+Então, pegando a ordem inversa temos o número: $11011_2$.
+\subsection{Com o resultado do item anterior, faça a conversão de volta para a base 10.}
+$1\times2^0 + 1\times2^1 + 0\times2^2 + 1\times2^3 + 1\times2^1$ = 27
+\subsection{Implemente as duas conversões e verifique se os seus resultados estão corretos.}
+\href{https://github.com/itznokx/NumericalMethods/tree/master/t1}{\textcolor{blue}{Link do Github para o arquivo c++ da implementação}}
+\section{Questão 2}
+Seja um conjunto de números dados em aritmética de ponto flutuante na base 10, com t=4 e
+o expoente entre [-5,5]. Pede-se:
+\subsection{Qual o menor (m) e o maior (M) número para esse conjunto?}
+O menor (m) desse conjunto é: 0,1000 $\times 10^{-5}$ \newline
+O maior (M) desse conjunto é: 0,9999 $\times 10^5$, ou seja, 99990
+\subsection{O número 100.000 pode ser representado por esse conjunto? Explique.}
+Não, pois 100.000 é representado por 0,1 $\times 10^6$, e o expoente máximo que possuimos nesse conjunto é 5.
+\subsection{Represente o número 357,26 usando o arredondamento.}
+Utilizando o arredondamento: de se x $\geq$ 5 arredonda-se para cima e x$<$5 arredonda-se para baixo.
+357,26 = 357,3 = 357,0
+\subsection{Supondo que o número 357,26 usando o arredondamento seja igual ao valor exato desse
+número e que o número 357,26 usando o truncamento seja igual ao valor aproximado,
+calcule o erro relativo e absoluto desse número.}
+
+\begin{itemize}
+    \item 357,26 = 357,0
+    \item Erro absoluto: 0,26
+    \item Erro relativo: 0,000727761294296
+\end{itemize}
+\section{Questão 3}
+Um número em aritmética de ponto flutuante completa é formado por dois fatores que
+envolvem fx e gx. Dito isso, pede-se:
+\subsection{Mostre quem seriam fx e gx para o número 357,26 usando o mesmo conjunto da questão
+anterior, ou seja, base 10, com t=4 e o expoente entre [-5,5].}
+f(x) = 0,3572 e g(x) = 0,00006
+\subsection{Diga quanto valeria os erros absoluto e relativo desse número usando uma equação e
+inequação, considerando o truncamento.}
+\begin{itemize}
+    \item [a)] {Erro absoluto: com g(x) igual a $0,6 \times 10^{-1}$ temos que $ 0,6 \times10^{-1} < 10^{-1}$}
+    \item [b)] {Erro relativo: sendo g(x) = 0,2 e f(x) 0,3572, então teremos :
+                $\frac{0,6 \times 10^{-4}}{0,3572} < \frac{10^{-4}}{0,6} $}
+\subsection{Diga quanto valeria os erros absoluto e relativo desse número usando uma equação e
+inequação, considerando o arrendodamento simétrico.}
+\begin{itemize}
+    \item [a)] {Erro absoluto: Levando em consideração que $|g(x)| > 0,5 $, então usaremos:
+                $|g(x)-1|\times10^{e-t} < 0,5\times10^{e-t}$ $\newline$ Assim $|(0,6-1,0)| \times 10^{-1} < 0,5 \times 10^{-1}$ = $0,4 \times 10^{-1} < 0,5 \times 10^{-1}$}
+\end{itemize}
+\end{itemize}
+\end{document}
+
