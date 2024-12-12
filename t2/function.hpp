@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cmath>
 
-#define MAX_ITER 10000
+#define MAX_ITER 1000
 
 double func1 (double x){
 	return x-x*log(x);
