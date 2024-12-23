@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#define MAX_ITER 1000
+#define MAX_ITER 100
 double newton_raphson (	double (*func) (double),
 						double (*dfunc) (double),
 						double x0,
