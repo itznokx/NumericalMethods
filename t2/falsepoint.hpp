@@ -1,7 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include "function.hpp"
-
 #define MAX_ITER 1000
 double falsepoint (double (*func) (double),double a,double b,double epsilon,int iter){
 	double root;
