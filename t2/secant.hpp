@@ -13,7 +13,7 @@ double secant (	double (*func) (double),
 	if ((abs(func(x1))<episilon1)||(abs(x1-x0)<episilon2)){
 		return x1;
 	}
-	int iter = 1;
+	int iter = 0;
 	while (1){
 		x2 = x1 - (func(x1)/((func(x1)-func(x0))/(x1-x0)));
 		double absDif = abs(x2-x1);
